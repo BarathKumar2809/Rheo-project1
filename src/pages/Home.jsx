@@ -24,9 +24,9 @@ const Home = () => {
     return (
         <div className="container">
             <h1 className="heading">Popular Movies</h1>
-            <div className="grid">
-                {movies.map(movie => (
-                    <MovieCard key={movie.id} movie={movie} />
+            <div  className="grid">
+                {movies.map((movie,index)=> (
+                    <MovieCard key={`${movie.id} -${index}`} movie={movie} />
                 ))}
             </div>
 
