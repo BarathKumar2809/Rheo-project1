@@ -15,7 +15,7 @@ const ThemeToggle = () => {
   const toggleTheme = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
-console.log('thrmr toggele')
+
   return (
     <button
       onClick={toggleTheme}
