@@ -1,6 +1,7 @@
 
 import '../styles/MovieCard.css';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const MovieCard = ({ movie }) => {
   const addToWatchlist = (e) => {
@@ -12,15 +13,22 @@ const MovieCard = ({ movie }) => {
 
     if (!exists) {
       localStorage.setItem('watchlist', JSON.stringify([...existing, movie]));
-      alert('✅ Added to watchlist!');
+      toast.success('✅ Added to watchlist!', {
+        position: 'top-center',
+        autoClose: 1000,
+        hideProgressBar: false,
+      });
     } else {
-      alert('⚠️ Already in watchlist.');
+      toast.info('⚠️ Already in watchlist.', {
+        position: 'top-center',
+        autoClose: 1000,
+        hideProgressBar: false,
+      });
     }
   };
 
   return (
     <div className="movie-card">
-      {/* Wrap only the image or title in Link */}
       <Link to={`/movie/${movie.id}`}>
         <img
           loading="lazy"

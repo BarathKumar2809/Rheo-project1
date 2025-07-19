@@ -7,7 +7,8 @@ import ThemeToggle from './components/ThemeToggle';
 import Watchlist from './pages/WatchList';
 import Navbar from './components/navbar';
 import './App.css'
-
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
-      
+      <ToastContainer />
     </Router>
   );
 }

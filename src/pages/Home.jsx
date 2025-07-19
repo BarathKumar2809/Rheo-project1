@@ -31,7 +31,7 @@ const Home = () => {
             </div>
 
             <div style={{ textAlign: 'center', margin: '20px 0' }}>
-                <button onClick={() => setPage(prev => prev + 1)} className="load-more-btn" disabled={loading}>
+                <button className= "big-button" onClick={() => setPage(prev => prev + 1)} className="load-more-btn" disabled={loading}>
                     {loading ? 'Loading...' : 'Load More'}
                 </button>
             </div>
