@@ -18,7 +18,7 @@
   gap: 20px;
 }
 
-.load-more-btn {
+.big-button {
   padding: 10px 20px;
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -28,7 +28,7 @@
   transition: background-color 0.3s ease;
 }
 
-.load-more-btn:hover {
+.big-button:hover {
   background-color: #666;
   color: #fff;
 }
@@ -53,3 +53,4 @@
 .big-button:hover {
   background-color: #005fa3;
 }
+
