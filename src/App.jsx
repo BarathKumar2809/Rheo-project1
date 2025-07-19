@@ -8,13 +8,11 @@ import Watchlist from './pages/WatchList';
 import Navbar from './components/navbar';
 import './App.css'
 
+
 function App() {
   return (
     <Router>
-
-
       <Navbar />
-     
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +20,7 @@ function App() {
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/watchlist" element={<Watchlist />} />
       </Routes>
+      
     </Router>
   );
 }

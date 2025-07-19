@@ -1,37 +1,69 @@
+
 /* src/components/MovieCard.css */
+
+/* Card container */
 .movie-card {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures equal card height */
+  cursor: pointer;
 }
 
+/* Hover effect on card */
 .movie-card:hover {
   transform: scale(1.05);
 }
 
+/* Movie Image */
 .movie-image {
   width: 100%;
   height: 270px;
   object-fit: cover;
 }
 
+/* Movie info (title, meta, button) */
 .movie-info {
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
+/* Title */
 .movie-title {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 4px;
+  min-height: 40px; /* Ensures fixed space for titles */
 }
 
+/* Meta information (rating, release year) */
 .movie-meta {
   font-size: 14px;
   color: #666;
-  margin-top: 4px;
+  margin-bottom: auto; /* Pushes the button downward */
 }
 
-.movie-card {
+/* Watchlist Button */
+.watchlist-btn {
+  margin-top: auto; /* Pins button to bottom */
+  background-color: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.watchlist-btn:hover {
+  background-color: #0056b3;
 }

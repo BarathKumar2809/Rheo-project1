@@ -22,6 +22,9 @@ const ThemeToggle = () => {
       style={{
         padding: '5px 10px',
         backgroundColor: theme === 'light' ? '#ddd' : '#333',
+
+
+        
         color: theme === 'light' ? '#000' : '#fff',
         borderRadius: '5px',
         cursor: 'pointer',
