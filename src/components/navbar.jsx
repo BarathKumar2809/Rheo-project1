@@ -6,7 +6,7 @@ import '../styles/Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      
+
       <div className="logo">🎬 Movie App</div>
 
       <div className="nav-links">

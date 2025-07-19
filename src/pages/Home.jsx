@@ -13,7 +13,7 @@ const Home = () => {
         setLoading(true);
         fetchPopularMovies(page)
             .then(data => {
-                // Append movies instead of replacing
+                
                 setMovies(prev => [...prev, ...data.results]);
             })
             .catch(err => console.error(err))
