@@ -15,7 +15,7 @@ A responsive React application to discover and explore popular movies using The 
 - 🎥 **Popular Movies**: View the latest trending movies from TMDB.
 - 🔍 **Search**: Find any movie by name.
 - 🌗 **Dark/Light Theme Toggle**: Switch between light and dark UI modes.
-- 📑 **Movie Details Page**: View detailed info for each movie.
+- 📑 **Movie Details Page**: View detailed info for each movie. 
 - ➕ **Add to Watchlist**: Save movies to a local watchlist (stored in `localStorage`).
 - ❌ **Remove from Watchlist**: Delete movies from your list easily.
 - 📱 **Responsive Design**: Mobile-friendly and optimized for all devices.
